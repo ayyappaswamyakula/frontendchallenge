@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="loginApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Front End Challenge</title>
+    <link href="css/style.css" rel="stylesheet" >
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+      <script src="loginapp.js"></script>
+      <script src="login/logincontroller.js"></script>
+      <script src="login/homecontroller.js"></script>
+      <script src="login/loginservice.js"></script>
+
+
+</head>
+
+<body>
+
+
+<nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="" class="logo"><img style="max-width:98px;"
+                     src="imgs/dummy-logo1.jpg"></a>
+        <ul class="main-nav" id="js-menu">
+		<li><a ui-sref="home"><i class="fa fa-home"></i> Home</a></li>
+            <li>
+                <a  ui-sref="login" class="nav-links"> <img style="max-width:30px;"
+                     src="imgs/download.png">Login</a>
+        </ul>
+    </nav>
+<div class="container">
+
+    <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+    <div ui-view></div>
+
+</div>
+
+</html>
